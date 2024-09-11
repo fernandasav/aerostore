@@ -1,0 +1,11 @@
+services:
+  mysql:
+    image: 'mysql:latest'
+    container_name: "aero_mysql"
+    environment:
+      - 'MYSQL_DATABASE=aerodatabase'
+      #- 'MYSQL_PASSWORD=aeropassword'
+      - 'MYSQL_ROOT_PASSWORD=aeropassword'
+      #- 'MYSQL_USER=aerostore'
+    ports:
+      - '3306:3306'

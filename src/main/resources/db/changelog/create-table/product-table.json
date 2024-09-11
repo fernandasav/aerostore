@@ -1,0 +1,65 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "create-product_info-table",
+        "author": "Fernanda Savatin",
+        "changes": [
+          {
+            "createTable": {
+              "tableName": "product_info",
+              "columns": [
+                {
+                  "column": {
+                    "constraints": {
+                      "nullable": false,
+                      "primaryKey": true
+                    },
+                    "name": "productId",
+                    "type": "integer"
+                  }
+                },
+                {
+                  "column": {
+                    "constraints": {
+                      "nullable": false
+                    },
+                    "name": "productName",
+                    "type": "varchar(255)"
+                  }
+                },
+                {
+                  "column": {
+                    "constraints": {
+                      "nullable": false
+                    },
+                    "name": "productColor",
+                    "type": "varchar(255)"
+                  }
+                },
+                {
+                  "column": {
+                    "constraints": {
+                      "nullable": false
+                    },
+                    "name": "productType",
+                    "type": "varchar(255)"
+                  }
+                },
+                {
+                  "column": {
+                    "constraints": {
+                      "nullable": false
+                    },
+                    "name": "productPrice",
+                    "type": "integer"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

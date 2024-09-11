@@ -1,0 +1,11 @@
+{
+  "databaseChangeLog": [
+    {
+      "include": {
+        "file": "create-table/product-info-table.json",
+        "relativeToChangelogFile": true
+      }
+
+    }
+  ]
+}

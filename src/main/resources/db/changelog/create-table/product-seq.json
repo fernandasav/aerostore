@@ -1,0 +1,17 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "create-product-seq",
+        "author": "Fernanda Savatin",
+        "changes": [
+          {
+            "createSequence": {
+              "sequenceName": "PRODUCT_SEQ"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

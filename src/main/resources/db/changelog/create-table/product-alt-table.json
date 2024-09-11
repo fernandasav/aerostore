@@ -1,0 +1,20 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "addAutoIncrement-productId",
+        "author": "Fernanda Savatin",
+        "changes": [
+          {
+            "addAutoIncrement": {
+              "columnDataType": "int",
+              "columnName": "productId",
+              "startWith": 1,
+              "tableName": "product_info"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
